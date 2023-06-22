@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import UserManagementApp from './UserManagementApp';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <h1 className='pt-6 pb-6 mb-9 font-bold text-5xl flex justify-center items-center rounded-lg shadow-lg hover:shadow-xl'>User Management Application</h1>
+      
+      <UserManagementApp />
     </div>
   );
-}
+};
 
 export default App;
